@@ -1,0 +1,283 @@
+/* fonts */
+@font-face {
+  font-family: 'Coestral Brand';
+  src: local('Coestral Personal Use Regular'), url('./assets/CoestralPersonalUse-z8ZEw.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Sarlotte Regular';
+  src: local('Sarlotte Regular'), url('./assets/SarlotteRegular-L3d73.woff') format('woff');
+  }
+
+*{
+  background-color: iory ;
+}
+
+  /* loading page */
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: ivory;
+  }
+
+/* ----------------- navbar ------------------- */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition:  0.30s ease-in-out;
+  padding-left: 30px; 
+  }
+
+.scrolled{
+  background-color: pink;
+  box-shadow: 0 2px 2px black;  
+}
+
+.brand{
+  font-family: 'Coestral Brand';
+  font-size: 60px;
+}
+
+.navbar-nav{
+  letter-spacing: 1px;
+  font-family: 'Coestral Brand';
+  font-weight: 600;
+  font-size: larger;
+  margin-right: 50px;
+  color: black; 
+}
+
+/* .active{
+  text-decoration: underline;
+} */
+
+.navbar-link:hover{
+  color: pink; 
+}
+
+/* --------------- banner/home -------------------- */
+
+.banner {
+  padding: 300px 0 50px 0; 
+  min-height: 100vh; /* Set a minimum height to reserve space for typing effect */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family:'Sarlotte Regular' ;
+  font-size: 65px;
+}
+
+/* .header{
+
+} */
+.wrap{
+  min-height: 100px
+}
+
+/* ------------------- about me ----------------------- */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 0 50px 0; 
+  min-height: 100vh; /* Set a minimum height to reserve space for typing effect */
+  font-family: "Sarlotte Regular";
+}
+
+.portrait img{
+  height: 550px;
+}
+
+/* ------------------- projects ---------------------- */
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 100px;
+  font-family: 'Sarlotte Regular';
+  font-weight: 600;
+}
+
+.project-col{
+  display: flex;
+  justify-content: center; /* Center align the card columns horizontally */
+
+}
+
+.card{
+  width: 300px;
+  margin-top: 30px;
+}
+
+.project-card img {
+  /* Make the image cover the entire container while preserving its aspect ratio */
+  width: 100%;
+  height: 250px; 
+  object-fit: cover;
+  border-radius:5px;
+}
+
+/* -------------- Resume ---------------- */
+.resume{
+  min-height: 210vh;
+  padding: 150px 0 20px 0; 
+  font-family: 'Times New Roman', Times, serif; 
+}
+
+
+.download-res a{
+  color: rgb(216, 68, 157); 
+}
+
+.download-res a:hover{
+  color: rgb(214, 141, 185); 
+}
+
+.right-set{
+  text-align:left;
+}
+
+.right-set h5{
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.resume-row h4{
+  border-bottom: 1px solid pink; 
+  font-weight: bold;
+  padding: 15px 0 10px 0; 
+}
+
+.imp-dates{
+  text-align: right;
+}
+
+/* ----------- contact me -------------- */
+.connect{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85vh;
+  padding: 100px 0 0 0;
+  font-family: 'Sarlotte Regular';
+  font-weight: 600;
+}
+
+.left-section input, 
+.right-section input, 
+.text-message{
+  margin: 20px 0 0 0;
+}
+
+
+.connect button {
+  background-color: pink;
+  border: 2px solid black;
+  box-shadow: black 4px 4px 0 0;
+  color: black;
+  /* cursor: pointer; */
+  /* display: inline-block;  */
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: right;
+  margin-top: 20px;
+  /* touch-action: manipulation; */
+}
+.connect button:hover {
+  background-color: ivory;
+}
+
+.connect button:active {
+  box-shadow: black 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+/* ------------ footer -------------- */
+.footer{ 
+  width: 100%;
+  z-index: 999;
+  transition:  0.30s ease-in-out;
+
+}
+
+.text-center a{
+  color: pink; 
+  padding: 10px ;
+  font-size: 35px;
+}
+
+.text-center a:hover{
+  color: rgb(208, 89, 186); 
+}
+
+.text-center div{
+  text-align: center;
+  font-size: 25px;
+  color: black; 
+}
+
+.text-center p{
+  text-align: center;
+  font-size: 18px;
+  color: black; 
+  font-family: 'Sarlotte Regular';
+
+}
+
+
+
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
